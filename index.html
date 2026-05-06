@@ -15,13 +15,13 @@
 
 <p id="msg"></p>
 
-<!-- Firebase v9+ (MODERN WORKING VERSION) -->
+
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
   import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } 
   from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
-  // 🔥 YOUR FIREBASE CONFIG (PASTE YOUR REAL ONE HERE)
+
   const firebaseConfig = {
     apiKey: "AIzaSyDKRdB1bUn3zh7tnelLtSQcC76hVijmZAQ",
     authDomain: "fir-login-project-6f964.firebaseapp.com",
@@ -29,11 +29,10 @@
     appId: "1:653712796128:web:29c001dc5565d340916385"
   };
 
-  // Initialize Firebase
+
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
 
-  // SIGN UP FUNCTION
   window.signup = function () {
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
@@ -47,7 +46,7 @@
     });
   }
 
-  // LOGIN FUNCTION
+
   window.login = function () {
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
